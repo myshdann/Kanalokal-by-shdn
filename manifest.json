@@ -9,7 +9,7 @@
   "lang": "id",
   "icons": [
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Japanese_Charm.svg/512px-Japanese_Charm.svg.png",
+      "src": "icon.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"

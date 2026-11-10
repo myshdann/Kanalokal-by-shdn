@@ -1,0 +1,25 @@
+{
+  "background_color": "#ffffff",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "DJpn - D Japanese Learning bydnzz",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "Djpn",
+  "start_url": "/index.html",
+  "theme_color": "#004cff",
+  "lang": "id",
+  "display_override": [
+    "fullscreen",
+    "browser",
+    "minimal-ui",
+    "standalone",
+    "window-controls-overlay"
+  ],
+  "categories": [
+    "books",
+    "design",
+    "developer",
+    "education"
+  ]
+}

@@ -1,0 +1,36 @@
+  // === AUTO-PLAY MUSIK (FILE LOKAL HOSTING) ===
+  let hasAutoPlayed = false;
+  const autoPlayMusic = () => {
+    if (hasAutoPlayed) return;
+    hasAutoPlayed = true;
+    
+    setTimeout(() => {
+      if (App.audio.paused) {
+        // Trik Unlock Audio
+        App.audio.volume = 0;
+        App.audio.play().then(() => {
+          App.audio.pause();
+        }).catch(() => {});
+
+        // Daftarkan lagu ke playlist (pakai nama file yang kamu upload)
+        if (!App.playlist.some(t => t.id === 'lagu_hosting')) {
+          App.playlist.unshift({
+            id: 'lagu_hosting',
+            title: 'Lagu DJpn',
+            artist: 'Lokal Hosting',
+            url: 'mk7mqq.mp3', // <-- Ini nama file yang kamu upload
+            dbKey: null,
+            artBlob: null
+          });
+          renderPlaylistUI();
+        }
+        
+        // Putar lagunya!
+        playTrack(0);
+        App.audio.volume = parseFloat($('#volumeRange').value);
+      }
+    }, 500);
+  };
+  document.addEventListener('click', autoPlayMusic, { once: true });
+  document.addEventListener('touchstart', autoPlayMusic, { once: true });
+  // ==========================================

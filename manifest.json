@@ -1,25 +1,18 @@
 {
-  "background_color": "#ffffff",
-  "dir": "ltr",
+  "name": "DJpn - D Japanese Learning",
+  "short_name": "DJpn",
+  "description": "Aplikasi pembelajaran bahasa Jepang interaktif.",
+  "start_url": "/",
   "display": "standalone",
-  "name": "DJpn - D Japanese Learning bydnzz",
-  "orientation": "any",
-  "scope": "/",
-  "short_name": "Djpn",
-  "start_url": "/index.html",
-  "theme_color": "#004cff",
+  "background_color": "#070a12",
+  "theme_color": "#070a12",
   "lang": "id",
-  "display_override": [
-    "fullscreen",
-    "browser",
-    "minimal-ui",
-    "standalone",
-    "window-controls-overlay"
-  ],
-  "categories": [
-    "books",
-    "design",
-    "developer",
-    "education"
+  "icons": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Japanese_Charm.svg/512px-Japanese_Charm.svg.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
   ]
 }
